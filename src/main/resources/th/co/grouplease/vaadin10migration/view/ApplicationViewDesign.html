@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;finwiz&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout style-name="scroll-auto" spacing="false" size-full margin="false">
+   <vaadin-vertical-layout style-name="scroll-auto" width="90%" height-full :center>
+    <vaadin-label>
+     <b>Application</b>
+    </vaadin-label>
+    <vaadin-tab-sheet style-name="framed equal-width-tabs" size-full :center :expand="0.95">
+     <tab caption="Apply" selected>
+      <vaadin-vertical-layout size-full margin="false">
+       <vaadin-horizontal-layout style-name="margin-top-15" :expand="0.15">
+        <vaadin-date-field caption="From" _id="applyFromDate"></vaadin-date-field>
+        <vaadin-date-field caption="To" _id="applyToDate"></vaadin-date-field>
+       </vaadin-horizontal-layout>
+       <vaadin-grid size-full _id="applyInsuranceGrid" :expand="0.9"></vaadin-grid>
+      </vaadin-vertical-layout>
+     </tab>
+     <tab caption="Pending">
+      <vaadin-vertical-layout size-full margin="false">
+       <vaadin-horizontal-layout style-name="margin-top-15" width-full>
+        <vaadin-upload button-caption="Select Certificate File" _id="uploadCertificateButton" :middle></vaadin-upload>
+        <vaadin-text-field caption="Search Contract No." placeholder="Enter Contract No." _id="pendingContractFilter" :right></vaadin-text-field>
+       </vaadin-horizontal-layout>
+       <vaadin-grid size-full _id="pendingInsuranceGrid" :expand="0.7"></vaadin-grid>
+      </vaadin-vertical-layout>
+     </tab>
+     <tab caption="Rejected">
+      <vaadin-vertical-layout size-full margin="false">
+       <vaadin-horizontal-layout style-name="margin-top-15" width-full :expand="0.15">
+        <vaadin-text-field caption="Search Contract No." placeholder="Enter Contract No." _id="rejectedContractFilter" :right></vaadin-text-field>
+       </vaadin-horizontal-layout>
+       <vaadin-grid size-full _id="rejectedInsuranceGrid" :expand="0.9"></vaadin-grid>
+      </vaadin-vertical-layout>
+     </tab>
+    </vaadin-tab-sheet>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

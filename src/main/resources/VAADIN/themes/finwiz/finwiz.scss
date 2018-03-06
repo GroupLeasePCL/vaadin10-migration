@@ -1,0 +1,290 @@
+$v-font-family: "Roboto", sans-serif;
+$v-font-weight: 500;
+
+@import "../valo/valo.scss";
+
+@mixin finwiz {
+
+  @include valo;
+  // Insert your own theme rules here
+
+  .border-style {
+    border: 1px solid !important;
+  }
+
+  .bg-color-body {
+    background-color: #F2F4F9;
+  }
+
+  .body-responsive {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0px 13%;
+  }
+
+  .v-scrollable {
+    background-color: #f2f4f9;
+  }
+
+  .pull-right {
+    float: right;
+  }
+  // STARTING OF RESOURCE PAGE PMO MODULE
+  .header-label {
+    color: #3B5998;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+  }
+
+  .btn-border-green {
+    background-image: none !important;
+    border: 1px solid #8DC63F !important;
+    border-radius: 4px !important;
+    color: #8DC63F !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    line-height: 19px !important;
+  }
+
+  .btn-bg-green {
+    border-radius: 4px !important;
+    background: #8DC63F none !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    line-height: 19px !important;
+  }
+
+  .header-layout {
+    background-color: #ffffff;
+  }
+
+  .v-grid-row > td {
+    height: 50px;
+    width: 110px;
+    text-align: left;
+  }
+
+  .v-grid-column-header-content, .v-grid-column-footer-content {
+    width: 100%;
+    line-height: 37px;
+    vertical-align: baseline;
+    background-color: #E8EBF0;
+    border-color: transparent;
+    text-align: left;
+    color: #3B5998;
+  }
+
+  .v-grid-cell {
+    background-color: #FFFFFF;
+    padding-left: 15px;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    font-size: 14px;
+  }
+
+  .v-grid-editor-cells {
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+
+  }
+
+  .v-grid-header .v-grid-cell {
+    font-weight: bold;
+    background: #E8EBF0;
+    color: white;
+    text-align: left;
+  }
+
+  .v-grid-footer .v-grid-cell {
+    font-weight: bold;
+    background: #E8EBF0;
+    color: white;
+    text-align: left;
+  }
+
+  .v-grid-footer .v-grid-cell div{
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .bg-sublayout-color-blue {
+    background-color: #8a96c7;
+    margin-bottom: -12px;
+  }
+
+  .header-label-color-white {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+  }
+
+  .layout-padding-20 {
+    padding: 20px;
+  }
+
+  .margin-top-20 {
+    margin-top: 20px;
+  }
+
+  .margin-top-15 {
+    margin-top: 15px;
+  }
+
+  .modified-label {
+    color: #606060;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .layout-border {
+    border: 1px solid #9DAED2;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+  }
+  .logo-label {
+    color: #FFFFFF !important;
+    font-size: 36px !important;
+    font-weight: 900 !important;
+    line-height: 42px !important;
+  }
+  .logo-label-layout {
+    background-color: #383B43 !important;
+    background-image: none;
+    border-bottom: 0px solid #1362b1 !important;
+  }
+
+  .valo-menu-subtitle {
+    border-bottom: 0px solid #666666 !important;
+    margin: 19px 0 7px 19px !important;
+  }
+  .valo-menu-item.selected {
+    background: #383B43 !important;
+  }
+  .valo-menu-item {
+    padding: 36px 37px 0 19px !important;
+  }
+  .valo-menu {
+    font-size: 16px !important;
+  }
+  .valo-menu {
+    background-color: #383B43 !important;
+    background-image: none !important;
+  }
+
+  .finwiz-main-menu{
+    box-sizing: border-box;
+    border: 0;
+    background-color: #FFFFFF !important;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 0 !important;
+    box-shadow: none;
+    border-bottom: #DDDDDD 1px solid;
+  }
+
+  .header {
+    height: 60px !important;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDD;
+
+      .header-content {
+        height: 40px !important;
+        width: 1180px !important;
+        position: absolute;
+        left: 50%;
+        margin-left: -590px;
+        margin-top: 10px;
+        display: inline-block;
+
+        .header-logo-panel{
+          height: 40px !important;
+          width: 125px !important;
+          border-right: solid 1px #DDDDDD;
+          display: inline-block;
+
+          .header-logo {
+              height: 40px !important;
+              width: 115px !important;
+            }
+        }
+
+         .menubar-panel{
+              height: 40px !important;
+              display: inline-grid;
+
+              .v-menubar-menuitem, .v-menubar-menuitem{
+                padding-top: 0px !important;
+              }
+         }
+      }
+  }
+
+  .menu-application .v-menubar-menuitem, .menu-profile .v-menubar-menuitem {
+    padding-top: 0px !important;
+  }
+
+  .menu-profile .csf .v-menubar > .v-menubar-menuitem-selected {
+    background-image: none;
+    background-color: #3B5998;
+  }
+
+  .pull-right {
+    float: right;
+  }
+
+  .scroll-auto{
+    overflow: auto;
+  }
+
+  h1{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  h2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  h3{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  h4{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .content{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .subtext{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .divider{
+    border-top: solid 1px #DDDDDD;
+  }
+
+  .divider-shadow{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  }
+
+  .v-grid-row.warning_row > td {
+    background-color: yellow;
+  }
+}
